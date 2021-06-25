@@ -1,0 +1,12 @@
+.vs/
+*.csproj.user
+PourOver/bin/
+PourOver/obj/
+PourOver.Test/bin/
+PourOver.Test/obj/
+PourOver.GlobalTool/bin/
+PourOver.GlobalTool/obj/
+Coverlet-html/
+PourOver.Test/coverage.opencover.xml
+PourOver/Properties/
+PourOver.GlobalTool/Properties/

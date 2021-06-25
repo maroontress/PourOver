@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>pourover</ToolCommandName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>PourOver.GlobalTool</PackageId>
+    <PackageVersion>$(Version)</PackageVersion>
+    <Authors>Tomohisa Tanaka</Authors>
+    <PackageProjectUrl>https://maroontress.github.io/PourOver/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maroontress/PourOver</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>
+      PourOver is a command-line tool that diagnoses string resources stored in CSV
+      files expressed in multiple languages by comparing the tokens embedded in each
+      string between the languages.
+    </Description>
+    <PackageReleaseNotes>
+      See https://maroontress.github.io/PourOver/releasenotes.html
+    </PackageReleaseNotes>
+    <Copyright>Copyright (c) 2021 Maroontress Fast Software</Copyright>
+    <PackageTags>csharp, dotnet-core, global-tool, i18n, pourover</PackageTags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Version>1.0.0.0</Version>
+    <RepositoryType />
+    <Company>Maroontress Fast Software</Company>
+    <PackageLicenseFile>COPYRIGHT.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="nuget\readme.txt">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+    <Content Include="nuget\COPYRIGHT.txt">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+    <Content Include="nuget\LEGAL_NOTICES.txt">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PourOver\PourOver.csproj" />
+  </ItemGroup>
+
+</Project>
