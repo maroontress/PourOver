@@ -14,11 +14,7 @@
     <PackageProjectUrl>https://maroontress.github.io/PourOver/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/maroontress/PourOver</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>
-      PourOver is a command-line tool that diagnoses string resources stored in CSV
-      files expressed in multiple languages by comparing the tokens embedded in each
-      string between the languages.
-    </Description>
+    <Description>PourOver is a command-line tool that diagnoses string resources stored in CSV files expressed in multiple languages by comparing the tokens embedded in each string between the languages.</Description>
     <PackageReleaseNotes>
       See https://maroontress.github.io/PourOver/releasenotes.html
     </PackageReleaseNotes>
