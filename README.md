@@ -34,10 +34,10 @@ A token is a placeholder embedded in a string resource, which is a string
 enclosed in braces (`{` and `}`).  For example, you have string resources as
 follows:
 
-| ID     | `English`             | `Japanese`           |
-| :--    | :--                   | :--                  |
-| `TIME` | `It's {hour} o'clock` | `{hour}時です`        |
-| `DEAR` | `Dear {name},`        | `拝啓 {name} さん、`  |
+| ID     | `English`              | `Japanese`           |
+| :--    | :--                    | :--                  |
+| `TIME` | `It's {hour} o'clock.` | `{hour}時です。`       |
+| `DEAR` | `Dear {name},`         | `拝啓 {name} さん、`   |
 
 The string resource `TIME` should include the token `{hour}` in all languages,
 and the token `{hour}` is assumed to be replaced with the hour of the current
@@ -48,9 +48,13 @@ A string resource can contain multiple tokens.
 
 ## Diagnostic message
 
-Each diagnostic message has the following format:
+The format of each diagnostic message is as follows:
 
-> _filename_ `:`_line_ `: ` _ID_ `: ` _diagnostic message_
+> _FILENAME_ `:`_LINE_ `: ` _ID_ `: ` _MESSAGE_
+
+It is as follows when you specify the `--verbose` option:
+
+> _FILENAME_ `:`_LINE_ `: ` _ID_ `: (` _DIAGNOSTIC-ID_ `) ` _MESSAGE_
 
 ## Token diagnostics
 
@@ -204,7 +208,7 @@ Options are as follows:
 
 | | Option | | Description |
 |---:|:---|:---|:---|
-| `-L`, | `--culture` | _CULTURE_ | Specify culture (e.g., `en_US`) |
+| `-L`, | `--culture` | _CULTURE_ | Specify culture (e.g., `en-US`) |
 | `-h`, | `--help` | | Show help message and exit |
 | `-b`, | `--ignore-blank` | | Ignore blank fields |
 | `-v`, | `--verbose` | | Be verbose |
